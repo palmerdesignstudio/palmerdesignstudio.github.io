@@ -1,0 +1,104 @@
+body{
+    font-family: 'Neue Haas Grotesk Display Pro 200', sans-serif;
+    color: #262626;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-color: #FFFFFF;
+  }
+  .section {
+    background-color: #FFFFFF;
+  }
+
+  
+
+  section div {
+    font-family: "Open Sans";
+    font-style: normal;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+  }
+
+  span {
+    font-size: 4em;
+    font-style: normal;
+    color: #fff;
+  }
+
+  p{
+    letter-spacing: .1rem;
+    color: gray;
+    text-transform: none;
+    font-size: 1.5rem;
+  }
+
+  .button {
+    font-family: 'Neue Haas Grotesk Display Pro 200', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border: 2px solid #262626; /* Ensure border is uniform */
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: none; /* Remove shadow */
+    color: #262626;
+  }
+  .button:hover {
+    color: grey;
+    border-color: grey;
+  }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #FFFFFF;
+        color: #262626;
+    }
+    .logo {
+        display: flex;
+        align-items: center;  
+    }
+    .logo img {
+        align-items: center;
+        margin-right: 10px;
+        margin-top:  20px;
+    }
+    .menu {
+        display: flex;
+        gap: 50px;
+        margin-top: 95px;
+        margin-right: 20px;
+    }
+    .menu a {
+        font-family: 'Neue Haas Grotesk Display Pro 200', sans-serif;
+        color: #262626;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        background-color: #FFFFFF;
+    }
+    .menu a:hover {
+        color: grey;
+    }
+.img{
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+
+.resume-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}

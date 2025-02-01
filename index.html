@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ben Palmer Design Portfolio | Palmer Design Studio</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/stylesheet/full-page-scroll.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+  </head>
+  <body>
+
+    <header id="header" style="position: sticky; top: 0; background-color: white; z-index: 1000; display:flex">
+      <div class="logo">
+      <a href="index.html">
+        <img src="assets/PalmerDesignDark.png" alt="Logo">
+      </a>
+      </div>
+      <nav class="menu">
+        <a href="index.html">Portfolio</a>
+        <a href="professional-work.html">Professional Work</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="social-icons" style="position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px;">
+      <img src="/assets/Email.png"  style="width: 30px; height: 30px; object-fit: contain;">
+      <img src="/assets/Email.png"  style="width: 30px; height: 30px;">
+      <img src="/assets/Email.png"  style="width: 30px; height: 30px;">
+    </div>
+    
+
+    <div id="main" class="scroll-container">
+      <script type="text/javascript">
+        const n = 12; // Change this number to the desired number of images
+        const images = [];
+        for (let i = 1; i <= n; i++) {
+          images.push(`ImageStack (${i}).png`);
+        }
+
+        images.forEach((image, index) => {
+          const section = document.createElement('section');
+          section.className = `section${index + 1}`;
+          section.innerHTML = `<div class="image-container"><img id="slideDeckImage" style="width: auto; height: 80vh; object-fit: contain;" src="ImageStack/${image}" alt="Image ${index + 1}"></div>`;
+          document.getElementById('main').appendChild(section);
+        });
+      </script>
+
+    </div>
+    <script src="assets/javascript/full-page-scroll.js"></script>
+    <script type="text/javascript">
+      new fullScroll({
+        mainElement: "main",
+        displayDots: false,
+        dotsPosition: "right",
+        animateTime: 0.07,
+        animateFunction: "ease",
+      });
+    </script>
+
+
+    
+  </body>
+</html>
