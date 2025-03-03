@@ -102,3 +102,28 @@ body{
     flex-direction: column;
     margin-top: 50px;
 }
+
+.social-icons{
+  z-index: 9999;
+  color: grey;
+}
+
+.nav{
+  z-index: 9999;
+  color: grey;
+  animation: pulse 1.5s infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+@keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+  }

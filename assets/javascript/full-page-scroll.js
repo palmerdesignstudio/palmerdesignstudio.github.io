@@ -141,6 +141,8 @@
 		var mTouchEnd = 0;
 		var _self = this;
 		var header = document.getElementById('header'); // Target the header element
+		var sidebar = document.getElementById('sidebar'); // Target the sidebar element
+		var nav = document.getElementById('nav'); // Target the nav element
 		var lastScrollUp = false;
 		var slideDeckImages = [];
 		document.querySelectorAll('[id^="slideDeckImage"]').forEach(function(element) {
@@ -157,6 +159,8 @@
 				// Hide the header when scrolling down
 				if (header) {
 					header.style.display = 'none'; // Hide the header
+					sidebar.style.display = 'none'; // Hide the sidebar
+					nav.style.display = 'none'; // Hide the nav
 				}
 
 				//make images full height
@@ -177,6 +181,8 @@
 				if (lastScrollUp) {
 					if (header) {
 						header.style.display = 'flex'; // Show the header
+						sidebar.style.display = 'flex'; // Show the sidebar
+
 					}
 					//make images 80%
 					if (slideDeckImages.length > 0) {
@@ -201,7 +207,7 @@
 
 		this.touchEnd = function (event) {
 			mTouchEnd = parseInt(event.changedTouches[0].clientY);
-			if (mTouchEnd - mTouchStart > 100 || mTouchStart - mTouchEnd > 100) {
+			if (mTouchEnd - mTouchStart > 400 || mTouchStart - mTouchEnd > 400) {
 				if (mTouchEnd > mTouchStart) {
 					_self.defaults.currentPosition --;
 				} else {
